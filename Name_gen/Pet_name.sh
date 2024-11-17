@@ -22,9 +22,10 @@ declare -a petNameReal_male=("Pete" "Gib" "Negan" "Leroy" "Arnold" "Barney" "Hen
 
 declare -a petNameReal_female=("Beltina" "Admeta" "Celiaj" "Rebbeca" "Angela" "Kim" "Megatron" "Potts" "Pavlina" "Grecia" "Cheakina")
 
-declare -a exotic_names=("Megatron" "Ehnoll" "Nils" "StarScream" "Bumblebee" "DiamondHead" "Goop" "Grey" "Shatterstar" "Pater")
+declare -a exotic_names=("Megatron" "Ehnoll" "Nils" "StarScream" "Bumblebee" "DiamondHead" "Goop" "Grey" "Shatterstar" "Pater" "Nebula" "Cosmic" "Galvon")
 
 #functions
+
 get_breed(){
     local breed=$1
     echo "The breed youve entered is: $breed"
