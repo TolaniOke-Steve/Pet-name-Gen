@@ -14,6 +14,6 @@ echo "Your selected options are type:$type breed: $breed name: $name"
 declare -a petType
 
 petType=("Dog" "Cat" "Bird" "Fish" "Hamster" "Reptile" "Snake" "Chicken" "Exotic")
-function get_breed($breed){
-    
+function get_breed(){
+
 }
