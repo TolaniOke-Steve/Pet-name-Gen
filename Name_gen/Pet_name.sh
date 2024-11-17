@@ -11,9 +11,11 @@ read name
 
 echo "Your selected options are type:$type breed: $breed name: $name"
 
-declare -a petType
+declare -a petType=("Dog" "Cat" "Bird" "Fish" "Hamster" "Reptile" "Snake" "Chicken" "Exotic")
 
-petType=("Dog" "Cat" "Bird" "Fish" "Hamster" "Reptile" "Snake" "Chicken" "Exotic")
-function get_breed(){
-
+get_breed(){
+    local breed=$1
+    echo "The breed youve entered is: $breed"
 }
+
+get_breed "$breed"
