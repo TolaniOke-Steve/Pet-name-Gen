@@ -4,16 +4,13 @@
 echo "Enter your pet type"
 read type 
 
-echo "Enter your pet Breed"
-read breed
-
 echo "Enter pet Sex (M/F)"
 read gender
 
 echo "Enter the type of name you want (Fantasy or Real Names)"
 read name
 
-echo "Your selected options are type:$type breed: $breed name: $name Sex: $gender"
+echo "Your selected options are type:$type  name: $name Sex: $gender"
 
 #arrays for types and names
 declare -a petType=("Dog" "Cat" "Bird" "Fish" "Hamster" "Reptile" "Snake" "Chicken" "Exotic")
@@ -22,9 +19,16 @@ declare -a petNameReal_male=("Pete" "Gib" "Negan" "Leroy" "Arnold" "Barney" "Hen
 
 declare -a petNameReal_female=("Beltina" "Admeta" "Celiaj" "Rebbeca" "Angela" "Kim" "Megatron" "Potts" "Pavlina" "Grecia" "Cheakina")
 
-declare -a exotic_names=("Megatron" "Ehnoll" "Nils" "StarScream" "Bumblebee" "DiamondHead" "Goop" "Grey" "Shatterstar" "Pater" "Nebula" "Cosmic" "Galvon")
+declare -a Fantasy_names=("Megatron" "Ehnoll" "Nils" "StarScream" "Bumblebee" "DiamondHead" "Goop" "Grey" "Shatterstar" "Pater" "Nebula" "Cosmic" "Galvon")
 
 #functions
+
+#normalizing user inputs to match array
+normalize(){
+    local input=$1
+    input=$(echo"$input" | tr '[:upper:]' '[:lower:]' | tr -d ' ')
+    echo "$(echo "$input" | sed -e 's/\b\(.\)/\u\1/g')"
+}
 
 get_breed(){
     local breed=$1
