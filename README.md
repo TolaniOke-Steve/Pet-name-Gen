@@ -1,3 +1,12 @@
 # Pet-name-Gen
-Add this command to run on windows
-- sed -i 's/\r$//' Pet_name.sh
+A Simple Bash script that takes user input a generates five random pet names
+
+# How to run 
+Open ubuntu and use ./Pet_name.sh if this dosent work use this 
+```
+sed -i 's/\r$//' Pet_name.sh
+```
+# Takeaways
+- CLI improvements
+- Generating varied outputs
+- Familiarization with Shell etc.
