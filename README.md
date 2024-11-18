@@ -2,7 +2,7 @@
 A Simple Bash script that takes user input a generates five random pet names
 
 # How to run 
-Open ubuntu and use ./Pet_name.sh if this dosent work use this 
+Open ubuntu, navigate to directory where file is contained and run ./Pet_name.sh. If this dosent work use this instead
 ```
 sed -i 's/\r$//' Pet_name.sh
 ```
