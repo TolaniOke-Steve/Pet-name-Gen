@@ -73,7 +73,7 @@ get_name() {
             get_rand "Exotic_names.txt" 5
             ;;
         "Paint")
-            echo "colour inspiried names for your pet:"
+            echo "colour inspired names for your pet:"
             get_rand "colour.txt" 5
             ;;
     esac
